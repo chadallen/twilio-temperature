@@ -13,10 +13,11 @@ Send an SMS from Arduino Yun via temboo and twilio that contains the temperature
 REQUIREMENTS
 
 Components:
-Arduino Yun
-Analog temperature sensor
-Moment switch
-10 kilohm resistor
+
+1. Arduino Yun
+2. Analog temperature sensor
+3. Moment switch
+4. 10 kilohm resistor
 
 HOMEPAGE AND SOURCE REPOSITORY
 
