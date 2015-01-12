@@ -1,19 +1,10 @@
 /*
 
-twilio-temperature
-Send an SMS via temboo and twilio that contains the temperature reading from an analog sensor
+Send an SMS from Arduino Yun via temboo and twilio that contains the temperature reading from an analog sensor
+
 Chad Allen 
 Jan 12 2015
-
-Components:
-Arduino Yun
-Analog temperature sensor
-Moment switch
-
-this sketch builds on:
-https://github.com/arduino/Arduino/tree/master/build/shared/examples/10.StarterKit/p03_LoveOMeter
-and
-https://www.temboo.com/arduino/yun/send-sms
+More info at: https://github.com/chadallen/twilio-temperature/blob/master/README.md
 
 */
 
