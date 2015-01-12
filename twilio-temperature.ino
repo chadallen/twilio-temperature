@@ -1,10 +1,21 @@
 /*
-  SendAnSMS
 
-  Demonstrates sending an SMS via a Twilio account using the Temboo Arduino Yun SDK.
+twilio-temperature
+Send an SMS via temboo and twilio that contains the temperature reading from an analog sensor
+Chad Allen 
+Jan 12 2015
 
-  This example code is in the public domain.
-  */
+Components:
+Arduino Yun
+Analog temperature sensor
+Moment switch
+
+this sketch builds on:
+https://github.com/arduino/Arduino/tree/master/build/shared/examples/10.StarterKit/p03_LoveOMeter
+and
+https://www.temboo.com/arduino/yun/send-sms
+
+*/
 
 #include <Bridge.h>
 #include <Temboo.h>
@@ -135,22 +146,22 @@ void loop()
 	    // was able to send our request to the Temboo servers
 	    unsigned int returnCode = SendSMSChoreo.run();
 
-		    // a return code of zero (0) means everything worked
-		    if (returnCode == 0) {
-		    	Serial.println("Success! SMS sent!");
-		    	} else {
-		      // a non-zero return code means there was an error
-		      // read and print the error message
-		      while (SendSMSChoreo.available()) {
+		// a return code of zero (0) means everything worked
+		if (returnCode == 0) {
+		  	Serial.println("Success! SMS sent!");
+		    } else {
+		      	// a non-zero return code means there was an error
+		      	// read and print the error message
+		      	while (SendSMSChoreo.available()) {
 		      	char c = SendSMSChoreo.read();
 		      	Serial.print(c);
-		      }
-		  }
-	  SendSMSChoreo.close();
+		    }
+		}
+	SendSMSChoreo.close();
 
-	 // do nothing for the next n seconds
-	 Serial.println("Waiting...");
-	 delay(loopDelay);
+	// do nothing for the next n seconds
+	Serial.println("Waiting...");
+	delay(loopDelay);
 
 	}
 }
