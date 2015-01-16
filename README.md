@@ -20,7 +20,9 @@ Components:
 4. 10 kilohm resistor
 
 You will need a valid Temboo account and a valid Twilio account
-This app makes use of Temboo "profiles" to avoid storing Twilio credentials in files
+Temboo account information is stored in TembooAccount.h (see TembooAccount_example.h for an example)
+Twilio account information is storied in TwilioAccount.h (seem TwilioAccount_example.h for an example)
+
 
 HOMEPAGE AND SOURCE REPOSITORY
 

@@ -11,20 +11,8 @@ More info at: https://github.com/chadallen/twilio-temperature/blob/master/README
 #include <Bridge.h>
 #include <Temboo.h>
 #include "TembooAccount.h" // contains Temboo account information
+#include "TwilioAccount.h" // contains Twilio account information
 
-/*** SUBSTITUTE YOUR VALUES BELOW: ***/
-
-// the Account SID from your Twilio account
-const String TWILIO_ACCOUNT_SID = "AC754cd8a4ec557e81cfc8d824f8fbf0e5";
-
-// the Auth Token from your Twilio account
-const String TWILIO_AUTH_TOKEN = "7cb6918a3f3361894744ff24410dd45c";
-
-// your Twilio phone number
-const String TWILIO_NUMBER = "+1 347-763-4325";
-
-// the number to which the SMS should be sent
-const String RECIPIENT_NUMBER = "+1 917-575-8974";
 
 void setup() {
 	Serial.begin(9600);
