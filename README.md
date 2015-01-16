@@ -16,7 +16,7 @@ Components:
 
 1. Arduino Yun
 2. Analog temperature sensor
-3. Moment switch
+3. Momentary switch
 4. 10 kilohm resistor
 
 You will need a valid Temboo account and a valid Twilio account
