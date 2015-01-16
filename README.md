@@ -2,10 +2,6 @@ AUTHOR
 
 Chad Allen chadallen.net 
 
-LAST UPDATED
-
-Jan 12 2015
-
 DESCRIPTION
 
 Send an SMS from Arduino Yun via temboo and twilio that contains the temperature reading from an analog sensor.
