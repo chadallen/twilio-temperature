@@ -33,7 +33,7 @@ void loop()
 	// a flag to indicate whether we've sent the SMS yet or not
 	boolean susccess = false; 
 
-	// store the hold switch state
+	// store the switch state
 	int switchState = 0;
 
 	// set up the temp sensor
@@ -47,6 +47,9 @@ void loop()
 
 	// store a converted temperature value based on voltage
 	float temperature = 0;
+
+	// add a manual calibration to temeperature in Farenheit degrees
+	int FCalibrate = 22;
 
 	// store the status of the switch
 	switchState = digitalRead(2);
@@ -66,7 +69,7 @@ void loop()
 	// ((volatge - 500mV) times 100)
 	// convert to F using formula: °C  x  9/5 + 32 = °F
 	  
-	temperature = ((voltage - .5) * 100) * (1.8) + 22;  
+	temperature = ((voltage - .5) * 100) * (1.8) + FCalibrate;  
 
 	// when the switch is closed, send an SMS
 
