@@ -14,9 +14,6 @@ More info at: https://github.com/chadallen/twilio-temperature/blob/master/README
 
 /*** SUBSTITUTE YOUR VALUES BELOW: ***/
 
-// Note that for additional security and reusability, you could
-// use #define statements to specify these values in a .h file.
-
 // the Account SID from your Twilio account
 const String TWILIO_ACCOUNT_SID = "AC754cd8a4ec557e81cfc8d824f8fbf0e5";
 
